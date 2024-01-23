@@ -1,6 +1,11 @@
 Currency Converter Lightning Web Component
 ==========================================
 
+
+![recordingNamedCredential-ezgif com-cut](https://github.com/pini-winer/Currency-Converter-lwc/assets/95618690/514433b5-081a-4243-88b8-fdde08ed62d9)
+
+
+
 This Lightning Web Component (LWC) allows users to convert currencies using an external API. The component fetches currency conversion rates from the specified API and provides a user-friendly interface for currency conversion.
 
 Features
@@ -15,18 +20,6 @@ Prerequisites
 
 Ensure that you have the necessary permissions to make callouts to external APIs in your Salesforce environment.
 
-Installation
-------------
-
-1.  Clone the repository to your local machine:
-    
-    bashCopy code
-    
-    `git clone [repository_url]`
-    
-2.  Deploy the Apex class (`currencyApi.cls`) and the Lightning Web Component (`currencyConverter` folder) to your Salesforce org using your preferred deployment method (e.g., Salesforce CLI, VS Code, etc.).
-    
-3.  Make sure to assign the appropriate permissions to profiles for the Apex class and resources.
     
 
 Usage
