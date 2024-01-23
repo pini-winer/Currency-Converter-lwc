@@ -1,0 +1,52 @@
+<template>
+    <div>
+    <lightning-card class="backgroundImg" >
+        <p style="font-size: 33px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0; padding: 8px; ">Currency Exchange</p>
+        <div class="slds-grid slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-4">
+                <lightning-input 
+                type="number"
+                name="seven"
+                value={valueAmount}
+                onchange={handleAmountChange}
+                label="Enter a number of coins" >
+                </lightning-input>
+            </div>
+        </div>
+        
+        <div class="slds-grid slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-4 ">
+                <lightning-combobox
+                label="from"
+                value={valueFrom}
+                placeholder="Select Currency"
+                options={CurrencyList}
+                onchange={handleChangeFrom} >
+                </lightning-combobox>
+            </div>
+
+            <lightning-button-icon
+             class="slds-p-top_large slds-p-left_small"
+             onclick={handleButtonClick} 
+             icon-name="utility:product_transfer" 
+             title="Replace">
+            </lightning-button-icon>
+
+            <div class="slds-col slds-size_1-of-4 slds-p-left_small">
+                <lightning-combobox
+                label="to"
+                value={valueTo}
+                placeholder="Select Currency"
+                options={CurrencyList}
+                onchange={handleChangeTo} >
+                </lightning-combobox>
+            </div>
+        </div>
+        <div class="slds-grid slds-grid_align-center slds-p-top_large"> 
+            <div class="slds-text-align_center" style=" margin: 0; border: 2px solid #989ca1; border-style: groove; display: inline-block; width: 140px; Height : 40px; border-radius: 9px; ">
+                <p class="slds-p-top_x-small" lwc:if={resultValue} >result: {resultValue}</p> 
+        </div>
+        </div>
+    </lightning-card>
+</div>    
+</template>
